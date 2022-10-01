@@ -55,7 +55,6 @@
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
-          
       </section>
       <!-- Specialty -->
       <section class="specialty">
@@ -443,8 +442,17 @@
             </li>
           </ul>
         </div>
-        <div>
-          
+        <div class="footer-feedback">
+          <p class="footer-form-title"><strong>Підпишіться на розсилку</strong> </p>
+          <form class="footer-form">
+            <input type="email" name="footer-email" placeholder="E-mail" required>
+            <button type="submit" class="footer-btn">
+              Підписатися
+              <svg>
+                <use href="./images/modal-icon.svg#icon-footer-send" width="24px" height="24px"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -462,7 +470,7 @@
                   <label for="name">Ім'я</label>
                 
                   <div class="modal-wrap">
-                  <input type="text" name="name" id="name" >
+                  <input type="text" name="name" id="name" required>
                   <svg>
                     <use href="./images/modal-icon.svg#icon-person" width="18px" height="18px"></use>
                   </svg>
@@ -472,7 +480,7 @@
                   <label for="tel">Телефон</label>
                 
                   <div class="modal-wrap">
-                  <input type="tel" name="tel" id="tel" >
+                  <input type="tel" name="tel" id="tel" required>
                   <svg>
                     <use href="./images/modal-icon.svg#icon-phone" width="18px" height="18px"></use>
                   </svg>
@@ -482,7 +490,7 @@
                   <label for="email">Пошта</label>
                 
                   <div class="modal-wrap">
-                  <input type="email" name="email" id="email" >
+                  <input type="email" name="email" id="email" required>
                   <svg>
                     <use href="./images/modal-icon.svg#icon-email" width="18px" height="18px"></use>
                   </svg>
