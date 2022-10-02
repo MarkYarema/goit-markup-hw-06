@@ -532,7 +532,7 @@ p {
 }
 
 .footer-feedback {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .footer-form svg {
@@ -555,10 +555,12 @@ p {
 }
 
 .footer-form input {
+  color: var(--primary-link-color);
   width: 358px;
   height: 50px;
   outline: none;
   padding-left: 16px;
+  padding-right: 16px;
   margin-right: 12px;
 
   background: inherit;
@@ -578,8 +580,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  min-height: 50px;
   color: var(--primary-link-color);
   background: var(--accent-color);
   border: none;
@@ -590,6 +592,10 @@ p {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+}
+
+.footer-btn svg {
+  margin-left: 10px;
 }
 
 /* Modal */
@@ -669,6 +675,7 @@ p {
 .modal-input {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .form-modal label {
@@ -682,13 +689,13 @@ p {
 
 .modal-wrap {
   position: relative;
-  margin-bottom: 10px;
 }
 
 .modal-wrap input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
+  padding-right: 42px;
   outline: none;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -766,7 +773,14 @@ p {
 
 .modal-checkbox a {
   color: var(--accent-color);
+  text-decoration: none;
 }
+
+/* .modal-checkbox a::after {
+  width: 100%;
+  height: 1px;
+  color: inherit;
+} */
 
 .modal-checkbox label {
   font-weight: 400;
